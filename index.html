@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Play Regal</title>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <!-- Scripts -->
+    <script defer src="assets/i18next.min.js"></script>
+    <script defer src="assets/swiper-bundle.min.js"></script>
+    <script defer src="assets/inputmask.js"></script>
+    <script defer src="assets/main.js"></script>
+    <script defer src="assets/form.js"></script>
+</head>
+<body class="body">
+
+    <section class="main-banner">
+        <div class="main">
+            <div class="logo">
+                <img class="logo__block" src="assets/img/logo.svg" alt="Logo">
+            </div>
+            <div class="button">
+                <img src="assets/img/zeus-logo.svg" alt="Zeus vs Hades">
+                <a href="#reg-form" class="btn">
+                    <span class="btn__rect">
+                        <span class="btn__rect-second">
+                            <span class="btn__rect-text">INSCRIPTION</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <img src="assets/img/lightning.svg" class="img-back lightning" alt="Lightning">
+            <img src="assets/img/lightning-bottom.svg" class="img-back lightning-bottom" alt="Lightning 2">
+            <img src="assets/img/zeus.svg" class="img-back zeus" alt="Zeus">
+            <img src="assets/img/scatter.svg" class="img-back scatter" alt="Scatter">
+            <img src="assets/img/scatter-two.svg" class="img-back scatter-two" alt="Scatter 2">
+            <img src="assets/img/hades.svg" class="img-back hades" alt="Hades">
+            <img src="assets/img/hades-desktop.svg" class="img-back hades-desktop" alt="Hades">
+            <img src="assets/img/zeus-desktop.svg" class="img-back zeus-desktop" alt="Zeus">
+            <img src="assets/img/scatter-sesktop.svg" class="img-back scatter-desktop" alt="Scatter">
+        </div>
+        <div class="form">
+            <div class="card">
+                <div class="card__title">
+                    <span>REVENDIQUEZ VOTRE</span>
+                </div>
+                <div class="card__bonus">
+                    <div class="card__bonus-text">
+                        <span>€3,000</span>
+                        <span class="win">BONUS DE BIENVENUE</span>
+                    </div>
+                </div>
+                <form id="reg-form">
+                    <div class="input">
+                        <input id="first_name" class="input__form" name="first_name" type="text" placeholder="Nom">
+                    </div>
+                    <div class="input">
+                        <input id="last_name" class="input__form" name="last_name" type="text" placeholder="Nom de famille">
+                    </div>
+                    <div class="input">
+                        <input id="password" class="input__form" name="password" type="password" placeholder="Mot de passe">
+                        <div id="toggle-pass"></div>
+                    </div>
+                    <div class="input">
+                        <input id="phone" class="input__form" name="phone" type="tel" placeholder="Téléphone portable">
+                    </div>
+                    <div class="input">
+                        <input id="email" class="input__form" name="email" placeholder="Adresse électronique">
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__form" type="checkbox" id="check-terms" name="check-terms">
+                        <label for="check-terms"><p>J'ai plus de 18 ans et j'ai lu et accepté les conditions générales et la politique de confidentialité.</p></label>
+                        <span class="terms-btn">Conditions générales d'utilisation</span>
+                    </div>
+                    <input type="hidden" id="country">
+                    <input type="hidden" id="city">
+                    <input type="hidden" id="address">
+                    <input type="hidden" id="zip">
+                    <input type="hidden" id="registration_ip">
+                    <input type="hidden" id="affid">
+                    <input type="hidden" id="subaff">
+                    <input type="hidden" id="subaff1">
+                    <input type="hidden" id="subaff2">
+                    <button id="btn-submit" type="submit" class="btn btn-send" disabled>INSCRIPTION</button>
+                    <div id="loader" class="loader" style="display:none;">
+                        <div class="loader__icon"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="bonus">
+        <h2><span class="first">VOTRE BONUS EN SEULEMENT</span><br> <span class="second">3 ÉTAPES</span></h2>
+        <div class="steps">
+            <div class="steps__item">
+                <div class="steps__item-img">
+                    <img src="assets/img/step-one.svg" alt="INSCRIPTION">
+                </div>
+                <span>INSCRIPTION</span>
+            </div>
+            <div class="steps__item">
+                <div class="steps__item-img">
+                    <img src="assets/img/step-two.svg" alt="DEMANDER UN BONUS">
+                </div>
+                <span>DEMANDER UN BONUS</span>
+            </div>
+            <div class="steps__item">
+                <div class="steps__item-img">
+                    <img src="assets/img/step-three.svg" alt="JOUER ET GAGNER">
+                </div>
+                <span>JOUER ET GAGNER</span>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <h2><span class="first">OBTENIR DES CHANCES DE GAGNER LE JACKPOT</span><br> <span class="second">Comme ils l'ont fait:</span></h2>
+        <div class="swiper gallerySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="gallery">
+                        <img src="assets/img/slide-one.png" alt="D.P. a gagné">
+                        <div class="gallery__content">
+                            <span class="gallery__content-title">D.P. a gagné</span>
+                            <span class="gallery__content-win">11,6 millions de $.</span>
+                            <span class="gallery__content-text">et a battu un record du monde</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery">
+                        <img src="assets/img/slide-two.png" alt="M.G. a gagné">
+                        <div class="gallery__content">
+                            <span class="gallery__content-title">M.G. a gagné</span>
+                            <span class="gallery__content-win">4,2 millions €</span>
+                            <span class="gallery__content-text">utiliser le bonus de bienvenue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery">
+                        <img src="assets/img/slide-three.png" alt="F.D. a gagné">
+                        <div class="gallery__content">
+                            <span class="gallery__content-title">F.D. a gagné</span>
+                            <span class="gallery__content-win">4,3 millions €</span>
+                            <span class="gallery__content-text">lors de son premier jour de jeu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="card">
+            <div class="card__title">
+                <span>REVENDIQUEZ VOTRE</span>
+            </div>
+            <div class="card__bonus">
+                <img class="arrows left" src="assets/img/arrow.svg" alt="Arrows">
+                <div class="card__bonus-text">
+                    <span>€3,000</span>
+                    <span class="win">BONUS DE BIENVENUE</span>
+                </div>
+                <img class="arrows right" src="assets/img/arrow.svg" alt="Arrows">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-window">
+        <div class="modal__content">
+            <div class="close-btn">
+                <div class="close-icon"></div>
+            </div>
+            <div class="modal__content-top">
+                <span>Conditions générales d'utilisation</span>
+            </div>
+            <div class="popup">
+                <h2>CONDITIONS GÉNÉRALES D'UTILISATION</h2>
+                <p>Logic Online Corp B.V. (la «<strong>Société</strong>») est constituée en vertu des lois de Curaçao, avec des bureaux situés à Abraham de Veerstraat 9 Curaçao P.O. Box 840.</p>
+                <p>Les paiements sont traités par Gamox Limited, dont le numéro d'enregistrement est HE422440, adresse&nbsp;: Volou, 14 Strovolos, 2060, Nicoisia, Chypre</p>
+                <p><strong>1. ACCEPTATION DES CONDITIONS</strong></p>
+                <p>1.1. En accédant et en utilisant notre Site Web à l'adresse: <a href="http://www.playregal.com/" target="_blank" rel="noopener"> http://www.playregal.com </a> (le «<strong>Site Web </strong>») et un de nos services en ligne et produits de jeux interactifs, et tous les sites internet connexes que nous utilisons parfois, et en vous inscrivant auprès de la Société (y compris en ouvrant un Compte, tel que ce terme est défini ci-dessous), vous reconnaissez avoir lu ces Conditions générales (les «&nbsp;<strong>Conditions générales</strong>») et vous acceptez d'être lié par ces Conditions générales.</p>
+                <p>1.2. Vous acceptez également l'utilisation de communications électroniques afin de conclure des accords, et vous renoncez à tous droits ou exigences en vertu des lois ou réglementations applicables dans toute juridiction applicable qui exigent une signature manuelle, dans la mesure permise par la législation applicable.</p>
+                <p>1.3. S'il y a une incohérence entre les Conditions et toute autre directive, politique ou autre information, publiée ou présentée par la Société, notamment sur le Site Web, et tous les sites web connexes que nous utilisons de temps à autre, les Conditions prévaudront.</p>
+                <p>1.4. Nous nous réservons le droit de modifier les Conditions à tout moment. Sauf indication contraire expresse, toutes les modifications entrent en vigueur immédiatement. Nous ferons des efforts raisonnables pour garantir que toute modification importante des présentes Conditions vous sera communiquée par une méthode appropriée (ex.&nbsp;: notification sur le Site Web ou par e-mail), mais cette notification ou l’absence de modification ne saurait avoir d'incidence sur l'entrée en vigueur et la validité de cette modification.</p>
+                <p>1.5. La dernière version des Conditions sera affichée à un endroit approprié sur le Site Web et sera disponible via le lien. Nous vous recommandons de vérifier de temps à autre la version la plus récente des présentes Conditions.</p>
+                <p>1.6. Si vous n'êtes pas d'accord avec une modification des présentes Conditions, votre seul recours est de cesser immédiatement d'utiliser nos services et le Site Internet et/ou de clôturer votre Compte. Si vous continuez d’accéder à nos services ou produits ou de les utiliser, nous considérerons que vous acceptez les conditions et leurs modifications au moment de l'utilisation ou de l'accès.</p>
+                <p>1.7. Notre licence a la portée et les modalités qui y sont décrites, et sa juridiction est clairement définie indépendamment de la législation qui peut ou non exister sur votre territoire. Par conséquent, en interagissant avec et/ou en jouant sur l'un ou l'autre de nos sites, vous acceptez de le faire en connaissance de cause, acceptant ainsi la validité de la licence qui régit notre activité.</p>
+                <p><strong>2. OUVERTURE D'UN COMPTE</strong></p>
+                <p>2.1. L'ouverture d'un compte chez nous («<strong>Compte</strong>») est une condition préalable pour utiliser un de nos services ou produits. Vous ne pouvez pas transférer, vendre ou nantir votre Compte à une autre personne. Cette interdiction comprend le transfert de tout actif de valeur de toute nature, notamment de la propriété de comptes, de gains, de dépôts, de paris, de droits et/ou de réclamations liés à ces actifs, juridiques ou commerciaux ou autres. L'interdiction de ces cessions ne se limite toutefois pas à la mise en gage, au nantissement, à la cession, à l'usufruit, à la négociation, au courtage, à l'hypothèque et/ou au don en coopération avec un fiduciaire ou tout autre tiers, société, personne physique ou morale, fondation et/ou association de quelque manière que ce soit.</p>
+                <p>2.2. Vous devez ouvrir votre propre compte et vous ne pouvez ouvrir qu'un seul compte. Si nous déterminons que vous avez créé deux comptes, nous nous réservons le droit de fermer les deux comptes ou de les combiner en un seul, de rejeter ou de nier tout pari effectué via des Comptes doubles et/ou de désactiver et/ou de révoquer tout gain. Nous pouvons également déduire des montants en votre possession les bonus et autres montants réellement retirés par vous en violation des présentes Conditions. Vous pouvez demander un nouveau compte en nous contactant à <a href="mailto:support@playregal.com">support@playregal.com</a>. Dans ce cas, veuillez préciser la raison de la demande, notamment le contexte et la raison de la suspension ou de l'annulation de tout compte précédent.</p>
+                <p>2.3. Vous ne devez laisser personne d'autre (notamment toute personne n'ayant pas l'âge légal pour jouer) utiliser votre compte, accepter un prix ou participer à des activités sur le Site Web en aucune circonstance. Vous serez seul(e) responsable de toute utilisation non autorisée du Site Web via votre compte en utilisant votre nom et votre mot de passe.</p>
+                <p>2.4. Vous reconnaissez que tout moyen de paiement que vous utilisez lorsque vous utilisez nos services, qu'il s'agisse d'une carte de crédit/débit ou d'un autre moyen, vous appartient et porte votre nom. Vous devez tenir votre nom d'utilisateur, votre mot de passe et toutes autres informations d'identification ou de contact strictement confidentiels et vous êtes seul(e) responsable de leur utilisation abusive éventuelle. Nous ne saurons être tenus responsables en cas d'utilisation non autorisée de votre Compte ou de tout moyen de paiement, et ne serons pas tenus de vous indemniser pour tout dommage, coût ou dépense encouru en conséquence.</p>
+                <p>2.5. Les fonds, dépôts, gains ou soldes détenus sur votre Compte ne sont soumis à aucune forme de paiement d'intérêts, y compris en cas de retard de paiement pour quelque raison que ce soit.</p>
+                <p>2.6. Si des fonds accidentellement ou illégalement crédités sur votre Compte (y compris à la suite d'une violation des présentes Conditions ou en rapport avec celle-ci), nous serons autorisés à effectuer les ajustements appropriés. Nous pouvons également compenser les montants qui vous sont crédités comme indiqué ci-dessus par d'autres montants (notamment des bonus) qui vous sont dus de temps à autre. Si vous utilisez ces fonds pour parier ou miser, nous nous réservons le droit d'annuler tous ces paris/mises et d'annuler tous les gains à notre discrétion.</p>
+                <p>2.7. Nous nous ferons un plaisir de vous aider en cas de problème lors de l'ouverture d'un compte. Si vous avez besoin d'aide, veuillez contacter notre service client.</p>
+                <p>2.8. Âge légal – Vérification d'identité</p>
+                <p>2.8.1. Pour utiliser notre Service, vous devez être âgé(e) de 18 ans ou plus. En utilisant nos services ou en vous inscrivant sur le Site Web, vous garantissez et déclarez que vous avez plus de 18 ans.</p>
+                <p>2.8.2. Pour éviter tout risque de violation, ne communiquez pas vos données de connexion aux mineurs de votre entourage. Nous recommandons d'utiliser un programme de filtrage pour éviter que les mineurs, en particulier les enfants, n'accèdent à tout contenu sur Internet qui ne serait pas approprié pour eux.</p>
+                <p>Nous pouvons recommander aux parents une liste de filtres Internet qui les aideront à tenir leurs enfants hors de tout contenu sur Internet qui ne serait pas approprié pour eux&nbsp;:</p>
+                <p><a href="https://famisafe.wondershare.com/internet-filter/best-internet-filters.html" target="_blank" rel="noopener">https://famisafe.wondershare.com/fr/internet-filter/best-internet-filters.html</a></p>
+                <p>2.8.3. Nous nous réservons le droit de vérifier l'identité et l'âge du Joueur à tout moment.</p>
+                <p>2.8.4. Si, à l'issue de la vérification de son âge, il apparaît que le joueur n'a pas atteint l'âge légal, ses gains seront annulés et son compte sera clôturé.</p>
+                <p>2.8.5. Nous sommes susceptibles de vérifier toutes les informations que vous nous avez fournies lors de la demande ou de la tentative de retrait, afin de garantir que vous avez 18 ans ou plus ou que vous remplissez les conditions légales pour jouer à des jeux d'argent dans votre pays. Cela peut arriver lorsque nous constatons qu'un moyen de paiement utilisé est accessible à des personnes n'ayant pas l'âge légal pour jouer. Les dépôts ou les retraits peuvent être bloqués jusqu'à ce que nous ayons terminé le processus de vérification.</p>
+                <p>2.8.6. Nous pouvons d'abord essayer de vérifier vos informations par voie électronique. Toutefois, si nous ne le faisons pas ou ne sommes pas en mesure de le faire, nous pouvons vous demander de nous fournir plus de pièces justificatives dans les 72 heures suivant notre demande. Nous pourrions notamment vous demander une copie en couleur de votre photo de passeport, une autre pièce d'identité photographique approuvée par le gouvernement, et un double d'une facture de services publics récente, un relevé bancaire ou de carte de crédit, une copie partiellement dissimulée de la carte utilisée pour le paiement ou tout autre document dont nous pouvons avoir besoin à des fins d'identification et de validation.</p>
+                <p>2.8.7. Tant que nous n'aurons pas terminé le processus de vérification de votre identité, des informations de votre carte et de votre âge, vous ne serez pas en mesure d'ouvrir ou d'utiliser votre compte ou de retirer des fonds. Nous pouvons également suspendre votre Compte et vous interdire de jouer ou de retirer des fonds jusqu'à ce que toutes les validations requises aient été effectuées de manière satisfaisante.</p>
+                <p>2.8.8. Si la vérification de votre âge révèle que vous n'avez pas l'âge requis, nous annulerons et/ou retirerons tous les gains et bonus obtenus. Nous nous réservons le droit d'effectuer des contrôles de sécurité aléatoires à tout moment et de vous demander des justificatifs supplémentaires afin de valider votre identité.</p>
+                <p>2.8.9. Pour des raisons de sécurité, nous pouvons enregistrer et surveiller les appels téléphoniques, les courriels et les discussions en direct au moyen desquels vous communiquez avec l'une de nos équipes d'assistance à la clientèle.</p>
+                <p><strong>3. INFORMATIONS SUR LE CLIENT</strong></p>
+                <p>3.1. Toutes les informations que vous fournissez, notamment les informations transactionnelles que vous saisissez, doivent être correctes, exactes, se rapporter à vous personnellement et refléter uniquement vos intentions.</p>
+                <p>3.2 Vous vous engagez à nous tenir immédiatement informés de tout changement des informations que vous nous avez fournies. À défaut, nous serons dégagés de toute responsabilité (le cas échéant) de vous informer de tout événement ou problème, et/ou de tout autre dommage ou dépense que vous pourriez encourir pour ne pas nous avoir informés de ce qui précède.</p>
+                <p>3.3 Notre politique de confidentialité à l'adresse suivante: Politique de confidentialité indiquent la façon dont nous collectons, utilisons ou partageons vos données personnelles. En acceptant les présentes Conditions, vous acceptez également les conditions de notre politique de confidentialité, et acceptez de respecter ses dispositions, lesquelles peuvent être modifiées à tout moment.</p>
+                <p><strong>4. RESPECT DE LA LOI</strong></p>
+                <p>4.1. Vous convenez qu'en vous inscrivant, en pariant, ou en utilisant l'un de nos services, vous n'enfreignez aucune législation locale ou nationale de votre pays, de votre lieu de résidence ou du lieu à partir duquel vos paris ou mises nous sont envoyés interdisant les jeux de hasard, et vous vous engagez à ne pas accéder à l'un de nos services et au Site Web depuis un territoire où cet accès ou cette utilisation sont interdits.</p>
+                <p>4.2. En tout état de cause, nous n'acceptons pas les joueurs des pays qui interdisent les jeux d'argent, y compris, entre autres, les pays suivants&nbsp;: Afghanistan, Algérie, Angola, Aruba, Australie (et ses territoires), Azerbaïdjan, Bahreïn, Balkans, Bangladesh, Bhoutan, Bonaire, Botswana, Brunéi, Burundi, Bulgarie, Cameroun, Chypre, Côte d'Ivoire, Îles Cook, Îles Cocos, Congo, Crimée, Cuba, Curaçao et Saint-Martin, Égypte, Érythrée, Éthiopie, Fidji, France et ses territoires, Guyane française, Polynésie française, Géorgie, Guam, Guinée, Conseil de coopération du Golfe, Îles Heard et McDonald, Hongrie, Inde, Indonésie, Iran, Iraq, Israël, Côte d'Ivoire, Jordanie, Kenya, Kirghizistan, Koweït, Liban, Libéria, Libye, Macao, Malaisie, Malawi, Malte, Îles Marshall, Mayotte, Micronésie, Maroc, Moldova, Mongolie, Mozambique, Nauru, Nouvelle Zélande, Niger, Nigéria, Nioué, Saint-Siège, Saint-Siège (Vatican), Afrique du Sud, Émirats arabes unis, États-Unis d'Amérique, Norvège, Pakistan, Îles Mariannes du Nord, Philippines, Pologne, Qatar, Ouzbékistan, Russie, Saba, La Réunion, Royaume-Uni de Grande-Bretagne et d'Irlande du Nord, Rwanda, Samoa, Sao Tomé-et-Principe, Seychelles, Saint-Eustache, Sierra Leone, Slovénie, Somalie, Géorgie du Sud, Soudan, Sri Lanka, Suriname, Syrie, Tadjikistan, Tanzanie, Ouganda, Pays-Bas et ses territoires, Timor-Leste, Turkménistan, Ukraine, Viet Nam, Wallis Futuna, Yémen, Zambie, Zimbabwe. Nous pouvons modifier la liste ci-dessus à notre discrétion.</p>
+                <p>4.3. Si vous êtes soupçonné(e) d'avoir enfreint une loi ou une réglementation, nous conservons le droit de suspendre votre accès à nos services, de clôturer votre compte et/ou refuser de vous verser vos gains. Nous nous réservons également le droit de bloquer tout ou partie de nos services dans tout pays ou territoire, ou de rétablir nos services, pour quelque raison que ce soit, sans notification.</p>
+                <p>4.4. Vous garantissez que vous ne déposez pas de fonds provenant d'activités criminelles et/ou illégales et/ou non autorisées, notamment de la fraude ou du blanchiment d'argent, et que vous ne menez pas d'autres activités criminelles et/ou illégales et/ou non autorisées et/ou que vous n'avez pas l'intention d'utiliser le Compte dans le cadre de ces activités et que vous n'autorisez aucune autre personne à utiliser votre Compte pour se livrer à de telles activités.</p>
+                <p>4.5. Vous reconnaissez que nous serons en droit de transmettre votre identité aux autorités compétentes, aux autres opérateurs en ligne, aux autres fournisseurs de services en ligne et aux banques, aux sociétés de cartes de crédit, aux fournisseurs de paiements électroniques ou à d'autres institutions financières et de les informer de toute activité suspectée illégale, frauduleuse ou inappropriée, et vous coopérerez pleinement avec nous pour enquêter sur une telle activité.</p>
+                <p><strong>5. LUTTE CONTRE LE BLANCHIMENT D'ARGENT ET AUTRES CONTRÔLES DE SÉCURITÉ</strong></p>
+                <p>5.1. L'entreprise et Gamox Limited sont résolues à faire preuve d'une vigilance totale pour empêcher le blanchiment d'argent et le financement du terrorisme, et feront tous les efforts, conformément à la loi applicable, afin de se protéger contre ce type d'activités.</p>
+                <p>5.2. Par conséquent, nous utiliserons tous les moyens à notre disposition pour répondre à toutes les exigences en matière de prévention du blanchiment de capitaux et du financement du terrorisme, notamment par les mesures suivantes&nbsp;:</p>
+                <p>- Demander à tous les joueurs de renseigner leurs coordonnées lors de l'ouverture d'un Compte et de nous fournir toutes les informations nécessaires afin de se conformer à la réglementation applicable en matière de LBC-CYC&nbsp;;</p>
+                <p>- Conserver une liste confidentielle de tous les joueurs inscrits ainsi que leurs pièces d'identité et documents transactionnels.</p>
+                <p>- Empêcher les joueurs mineurs (conformément à la loi applicable sur le territoire concerné) d'utiliser nos services.</p>
+                <p>- Limiter les dépôts à un montant spécifique qui sera fixé périodiquement.</p>
+                <p>- Ne pas accepter les Comptes anonymes ou les Comptes ouverts sous des noms fictifs de manière à dissimuler l'identité du véritable titulaire.</p>
+                <p>- Ne pas accepter l'argent des joueurs. Les fonds des joueurs ne peuvent être transférés que par carte de crédit/débit et/ou par tout autre prestataire de services de paiement intégré à la plate-forme.</p>
+                <p>- Les gains ne seront pas distribués avant une vérification stricte de la correspondance entre le nom du compte et le nom du titulaire de la carte de crédit, ou tout autre moyen d'identification que nous pourrions mettre en œuvre à notre seule discrétion.</p>
+                <p>- Le transfert de fonds entre Comptes est totalement interdit.</p>
+                <p>- Vérifier les antécédents et autres caractéristiques de toute transaction complexe ou importante et de toute transaction particulièrement susceptible d'être liée au blanchiment de capitaux ou au financement du terrorisme.</p>
+                <p>- Coopérer avec toutes les autorités administratives, judiciaires et de police compétentes dans leurs efforts pour prévenir et détecter toute activité criminelle.</p>
+                <p>- Si un joueur fournit de fausses informations, l'entreprise et Gamox Limited a le droit (et peut) annuler immédiatement l'inscription de cette personne en tant que joueur auprès de la société. <br><br><strong>6. RETRAITS,&nbsp;</strong><strong>DÉPÔTS</strong><strong> ET REMBOURSEMENTS</strong></p>
+                <p>6.1. Toute mention de paiements ou de retraits d'un Compte fait référence à tout paiement que nous recevons et/ou que nous effectuons par l'intermédiaire de nos systèmes et processus de paiement (ou de ceux de nos concédants de licence).</p>
+                <p>6.2. Tout dépôt en argent réel doit faire l'objet d'une mise avant de pouvoir être retiré. Il s'agit d'un règlement de sécurité qui vise à empêcher le blanchiment d'argent au niveau international. Par conséquent, nous refuserons les demandes de retrait concernant des fonds n'ayant pas servi à effectuer des paris.</p>
+                <p>6.3. Pour effectuer un dépôt, vous avez le choix entre plusieurs modes de paiement. Vous ne pouvez retirer qu'avec la dernière option que vous choisissez. Par exemple, si vous déposez avec une cryptomonnaie, vous ne pouvez retirer qu'avec une cryptomonnaie. Si vous déposez par carte, vous ne pouvez retirer que par virement bancaire. Si vous utilisez un coupon, vous pouvez choisir de retirer par virement bancaire ou par cryptomonnaie. Certains pays n'autorisent les retraits que sur un portefeuille de crypto-monnaie. Pour savoir si cette limitation vous concerne, vous pouvez contacter le service-client avant d'effectuer un dépôt. Nous nous réservons le droit d'ajouter ou de supprimer des modes de paiement, ou de demander à l'utilisateur d'en changer, à notre discrétion, si nécessaire.</p>
+                <p>6.4. Sauf dans les cas où des restrictions de retrait sont appliquées (par exemple en ce qui concerne les fonds liés à des systèmes de bonus), vous pouvez retirer des fonds de votre compte une fois que tous les paiements ont été approuvés et que vous avez effectué notre processus de vérification. Dans ce cas (lorsque les paiements sont approuvés et que tous les documents nous ont été envoyés), nous traitons la demande dans un délai d'un jour ouvrable. Les justificatifs suivants peuvent vous être demandés :</p>
+                <p>Pièce d'identité avec photographie. Il s'agit d'une copie d'une pièce d'identité en cours de validité, indiquant votre nom et votre signature et comportant une photo de vous. Les pièces d'identité admissibles sont les suivantes : passeport/carte d'identité nationale.</p>
+                <p>Carte de crédit/débit&nbsp;: une copie du recto et du verso de la carte utilisée pour financer votre compte. Pour des raisons de sécurité, veuillez dissimuler les 8 chiffres du milieu et les 3 chiffres de sécurité au dos.</p>
+                <p>Justificatif de domicile&nbsp;: une facture de services publics récente ou un relevé de carte de crédit indiquant l'adresse à laquelle vous avez enregistré votre compte.</p>
+                <p>Nous pouvons ajouter ou modifier les documents et/ou informations de vérification ci-dessus en temps voulu. Dans ce cas, nous vous demanderons de nous fournir des documents et/ou des informations supplémentaires, notamment des informations relatives à des exigences réglementaires ou légales telles que les réglementations en matière de lutte contre le blanchiment d'argent et de connaissance du client.</p>
+                <p>6.5. Le montant minimum pour un retrait est actuellement de 100 euros. La limite concernant le retrait des gains est actuellement de 1 500 euros par semaine civile. &nbsp;Les joueurs VIP Bronze et VIP Chrome peuvent retirer 500 euros maximume par semaine civile. Vous pouvez effectuer jusqu'à&nbsp;4 retraits par mois calendrier sans frais. Chaque opération de retrait supplémentaire sera facturée d'un montant de 60 euros. Nous pouvons modifier les montants minimaux ci-dessus si nécessaire, à notre discrétion.</p>
+                <p>6.6. Les retraits de gains et bonus générés par les bonus gratuits déposés au préalable peuvent être limités à des pays spécifiques. Veuillez lire attentivement toutes les conditions générales applicables à tout programme de bonus que nous pouvons vous proposer périodiquement.</p>
+                <p>6.7. Nous nous réservons le droit de facturer une commission raisonnable basée sur les taux de change si nous avons des raisons de croire qu'un client ne respecte pas les règles du jeu et profite des fluctuations des taux de change. Nos taux de change sont basés sur les cours fournis quotidiennement par www.xe.com.</p>
+                <p>6.8. Les demandes de retrait peuvent faire l'objet d'un audit avant leur traitement, et nous nous réservons le droit de reprendre des bonus ou des gains si une demande ne satisfait pas aux exigences d'un audit.</p>
+                <p>6.9. Les membres Gold, Platinum, Diamond et Red Diamond seront admissibles à des retraits plus rapides.</p>
+                <p>6.10. Logic Online Corp B.V. et tous nos autres services en ligne et produits de jeux interactifs, ont une politique de remboursement stricte. Notre politique de remboursement est la suivante&nbsp;: <br>-&nbsp; Si un joueur s'inscrit à un de nos services en ligne et dépose de l'argent qu'il utilise ensuite pour jouer et/ou interagir avec l'un de nos services en ligne, il n'aura droit à aucun remboursement.</p>
+                <p>6.11. Si la somme totale des dépôts d’un joueur depuis la création du compte est inférieure ou égale à 500€, le montant maximal de retrait sera de 10X fois le montant du dernier dépôt effectué, moins tous frais associés. Par exemple : un joueur qui a déposé en dernier lieu 10€ sera éligible à un retrait maximal équivalent à 10 x 10 = 100€ .</p>
+                <p><strong>7. SUSPENSION ET CLÔTURE D'UN COMPTE</strong></p>
+                <p>7.1. Nous nous réservons le droit de suspendre ou de clôturer votre compte ou l'accès aux fonds qu'il contient, en cas de suspicion d'utilisation abusive de notre Site Web, de violation des présentes Conditions, d'activité illégale, de fraude, de blanchiment d'argent, de violation de la sécurité, de refacturation, de tricherie, d'utilisation de nos services dans une juridiction qui le juge illégal ou si vous n'avez pas l'âge légal minimum pour jouer en vertu de la législation applicable.</p>
+                <p>7.2. Le retrait de fonds peut être temporairement suspendu jusqu'à ce que nous ayons terminé notre enquête dans le cadre de toute obligation légale ou réglementaire qui pourrait nous être imposée. En outre, nous nous réservons le droit de suspendre ou de clôturer tout Compte à notre discrétion.</p>
+                <p>7.3. En cas de suspension de votre compte, vous pouvez nous fournir des preuves permettant de lever nos soupçons dans les trois (3) mois suivant ladite suspension.</p>
+                <p>7.4. Vous avez le droit de clôturer votre compte en adressant une demande à notre service client.</p>
+                <p>7.5. Nous nous réservons le droit de suspendre ou de clôturer votre compte en cas de refacturation de vos dépôts, ce qui constitue une violation des présentes Conditions. Dans ce cas, nous serons en droit de confisquer tout le solde disponible sur votre compte, y compris les dépôts et les gains. Cela sera considéré comme une compensation de la refacturation.</p>
+                <p>7.6. Si un comportement inapproprié de votre part ou une mauvaise utilisation de votre Compte nous a conduit à retenir vos fonds, nous procéderons conformément aux lois et réglementations en vigueur.</p>
+                <p><strong>8. PARIS OU MISES</strong></p>
+                <p>8.1. Il vous incombe de lire, vérifier et comprendre toutes les instructions relatives aux paris ou aux mises avant de parier ou de miser. Vous devez impérativement vous assurer que tout pari ou mise que vous choisissez reflète vos intentions. Nous ne saurions être tenus responsables des erreurs ou des malentendus de votre part. Lorsque vous effectuez un pari sur le Site Web, le même montant est débité de votre compte.</p>
+                <p>8.2. Dans tous les cas, en cas de désaccord ou de question sur les détails de tout pari ou toute mise sur le Site Web ou sur le résultat de tout pari ou toute mise, nos registres électroniques (qui font partie de nos infrastructures techniques réglementées et vérifiées) seront le seul et ultime critère de décision. Vous consentez à ce que nos registres constituent la seule référence pour décider de la validité et des conditions de tous les paris ou mises effectués et les circonstances dans lesquelles ils l'ont été.</p>
+                <p>8.3. L'utilisation ou l'exploitation de bugs, d'erreurs, de vulnérabilités, de dysfonctionnements ou de défauts de conception sur le Site Web pour obtenir un avantage indu ou tout gain personnel est interdite. Les bugs reconnus ou suspectés doivent être signalés le plus rapidement possible au service client. Les clients qui reconnaissent ou soupçonnent la présence d'un bug sur le Site Web qui entraîne des gains irréguliers doivent cesser de jouer immédiatement et le signaler.</p>
+                <p>8.4. Si nous avons des raisons de soupçonner une fraude, une exploitation de bugs, la présence de joueurs mineurs, toute activité illégale ou illégitime, ou le non-respect de la politique énoncée dans les présentes Conditions, nous nous réservons le droit de refuser toute partie d'un pari ou d'une mise effectué, de nier tout pari ou mise qui a été effectué, de bloquer les retraits, de conserver tous les dépôts effectués et de retenir le paiement de tous les dépôts, gains ou bonus.</p>
+                <p>8.5. Nous ne verserons que les gains ayant été gagnés de manière honnête conformément aux présentes Conditions.</p>
+                <p>8.6. En cas de défaillance des services de jeu, par exemple un plantage du serveur, une erreur logicielle, une interruption des communications, une panne de courant, une catastrophe naturelle ou autre, des précautions raisonnables seront prises pour empêcher la perte d'informations, et des efforts raisonnables seront déployés pour récupérer les informations. Cependant, en cas de perte d'informations sans possibilité de récupération, toute revendication concernant des paris qui ne peuvent être confirmés par les informations contenues dans nos systèmes, ne saurait être et ne sera pas acceptée.</p>
+                <p><strong>9. JEUX DE HASARD ÉQUITABLES</strong></p>
+                <p>9.1. Nous mettrons tout en œuvre pour traiter équitablement les clients et corriger toute défaillance ou tout défaut de nos systèmes.</p>
+                <p>9.2. Vous consentez à ce que notre logiciel générateur de nombres aléatoires déterminera le résultat des paris ou des paris sur le Site Web et que ses calculs seront définitifs et prévaudront à tous égards.</p>
+                <p><strong>10. CODE DE CONDUITE</strong></p>
+                <p>10.1. Certains services ou produits du Site Web vous donnent la possibilité d'interagir avec d'autres clients dans un chat virtuel. L'intention de ce chat est de contribuer au divertissement et à la communication des clients. Nous nous réservons le droit de bloquer l'accès à ces conversations pour tout client, à tout moment.</p>
+                <p>10.2. Lorsque vous participez à un chat avec d'autres clients ou avec un membre de l'équipe d'assistance à la clientèle, vous convenez que tout langage désagréable, offensant ou inapproprié n'est pas toléré et que vous ne dérangez pas, ne menacez pas, ne gênez pas ou ne déshonorez pas les autres clients ou les membres de l'équipe d'assistance à la clientèle.</p>
+                <p>10.3. Vous acceptez de ne pas publier ou envoyer à quiconque par le biais d'un message de chat, d'un e-mail ou d'un message via le Site Web ou autrement via nos services, tout contenu insultant, menaçant, obscène, nocif ou pornographique, ou tout contenu qui violerait ou enfreindrait de quelque manière que ce soit les droits d'autrui ou causerait une insulte, une détresse ou un inconfort, ou qui est illégal.</p>
+                <p>10.4. Vous consentez à ne promouvoir aucun pari, jeu ou autre produit dans le chat ou ailleurs sur le Site Web.</p>
+                <p>10.5. Vous acceptez que nous et nous seuls avons le droit d'utiliser, de copier, de modifier, d'adapter, de distribuer, de montrer, de reproduire et de transmettre toute information que vous écrivez dans un chat, y compris en permettant à d'autres utilisateurs de l'un de nos services ou produits de voir et de copier ces informations. En tout état de cause, vous reconnaissez que vous n'êtes pas autorisé(e) à utiliser tout ce que vous avez écrit dans le chat de quelque manière que ce soit sans notre approbation et que nous ne sommes pas tenus de vous le fournir.</p>
+                <p>10.6. La Société se réserve le droit de refuser le service à un client qui n'a pas respecté ou a violé les présentes Conditions ou toute autre directive ou politique que nous pouvons publier de temps à autre, soit en interrompant la communication avec lui ou en bloquant le compte de cette personne pour une durée indéterminée.</p>
+                <p><strong>11. BONUS ET OFFRES PROMOTIONNELLES</strong></p>
+                <p>11.1. Vous consentez à ce que, lorsque vous vous inscrivez à l'un de nos services ou produits, il vous soit demandé d'indiquer sur le formulaire d'inscription si vous acceptez de recevoir des contenus ou des informations marketing de notre part, de nos partenaires ou de tiers sélectionnés.</p>
+                <p>11.2 La Société peut, dans certains cas, vous offrir ou vous accorder des montants gratuits ou bonus à créditer sur votre Compte. Certains bonus ne peuvent être utilisés conjointement avec les produits spécifiques indiqués que lorsque le bonus est offert ou accordé. Tous les bonus sont liés par les Conditions du bonus concerné ou par les conditions promotionnelles applicables et les restrictions de distribution du bonus contenues dans l'offre ou la récompense applicable.</p>
+                <p>11.3. Les offres bonus et les offres promotionnelles (à moins qu'elles ne soient généralement disponibles) sont personnelles et réservées au destinataire ou à un groupe de personnes et ne peuvent pas être transférées. Si vous n'êtes pas le destinataire prévu ou si vous ne faites pas partie du groupe prévu, vous ne pouvez pas recevoir le bonus ou bénéficier de l'offre promotionnelle. Les offres de bonus ne peuvent pas être combinées&nbsp;: un utilisateur ne peut avoir qu'un bonus actif sur son compte à un moment donné. Si un utilisateur a un bonus sur son compte et tente d'obtenir un bonus supplémentaire, le système informera l'utilisateur que la tentative d'obtenir un nouveau bonus entraînera l'annulation de son bonus actuel et son remplacement par le nouveau.</p>
+                <p>11.4. Vous convenez qu'il est de votre responsabilité de vous assurer que toute offre de bonus ou promotion qui vous intéresse est toujours disponible, que vous y avez droit et que vous acceptez toutes les conditions qui s'y appliquent.</p>
+                <p>11.5. Nous nous réservons le droit de limiter le nombre de fois que vous pouvez utiliser un bonus ou une offre promotionnelle. En plus des conditions expressément énoncées dans l'offre elle-même, les bonus et les offres promotionnelles sont limités à un compte par personne, famille, adresse de ménage, adresse e-mail, numéro de carte de crédit et autres environnements communs qui partagent la même adresse IP (bureaux, hôtels, cafés, etc.). À tout moment où une participation multiple est autorisée, nous nous réservons le droit de limiter le nombre de participants, à notre seule discrétion.<br>- Nous avons une politique de tolérance zéro concernant les abus en matière de bonus et les activités frauduleuses. Nous nous réservons le droit de bloquer les bonus de tout joueur qui abuserait de nos offres de bonus. Si une activité frauduleuse ou un abus de bonus est suspecté, nous nous réservons le droit d'annuler tout gain reçu en utilisant des fonds bonus.</p>
+                <p>11.6. L'inclusion des participants dans toute offre bonus ou promotionnelle sera le résultat de critères que nous sélectionnons à notre discrétion, tels que toute combinaison des éléments suivants&nbsp;: âge, pays de résidence, adresse IP et d'autres moyens de sélection.</p>
+                <p>11.7. Vous devez réclamer certains types de bonus qui sont annoncés comme disponibles, plutôt que d'être automatiquement crédités sur votre compte. Dans ce cas, il vous incombe de les récupérer avant l'expiration de leur date de validité. Pour réclamer un bonus, accédez à «&nbsp;Bonus disponibles&nbsp;» sur la page «&nbsp;Mon compte&nbsp;» et sélectionnez le bonus que vous souhaitez réclamer.</p>
+                <p>11.8. En jouant, vos fonds seront d'abord déduits de votre solde d'argent en cash, puis de votre solde d'argent en bonus.</p>
+                <p>11.9. Nous pouvons offrir des bonus et des offres spéciales de temps à autre, y compris, entre autres, des bonus de jeu, des jetons gratuits, des tours gratuits et de l'argent («&nbsp;bonus gratuits&nbsp;»).</p>
+                <p>11.10. Les bonus gratuits accordés le seront à notre entière discrétion et seront soumis aux présentes Conditions générales et à toute condition supplémentaire énoncée dans les présentes.</p>
+                <p>11.11. Les exigences en matière de retrait pour tous les bonus (gratuit et dépôt) sont sujettes à changement en fonction du statut d'un membre au moment où les bonus ont été émis&nbsp;:</p>
+                <p>- Les Non-VIP et les VIP de niveau Bronze ou Chrome peuvent retirer un montant qui est inférieur ou égal à CINQ fois le montant du bonus reçu&nbsp;;</p>
+                <p>- Les VIP de niveau Silver, Gold ou Platinum peuvent retirer un montant inférieur ou égal à DIX fois le montant du bonus reçu&nbsp;; et</p>
+                <p>- Les VIP de niveau Diamond ou Red Diamond peuvent retirer un montant inférieur ou égal à QUINZE fois le montant du bonus reçu.</p>
+                <p>11.12. Pour les non-VIP et les VIP de niveaux Bronze, Chrome, Silver, Gold, Platinum, Diamond et Red Diamond, tous les gains qui dépassent le montant maximum de retrait, comme mentionné ci-dessus, seront considérés comme nuls et non avenus, et seront automatiquement retirés du compte du membre. En outre, le montant du bonus initial sera automatiquement déduit et supprimé du compte du membre.</p>
+                <p>11.13. Des restrictions de retrait sont imposées aux paris effectués avec le dépôt PLUS le bonus activé. Tous les gains provenant de dépôts/paris en argent réel peuvent être retirés instantanément.</p>
+                <p>11.14. Vous pouvez retirer l'argent bonus reçu et tout gain gagné en misant cet argent bonus, dans le respect des conditions décrites ci-dessous (qui peuvent être modifiées, à notre discrétion)&nbsp;:</p>
+                <p>- Le retrait de l'argent reçu en bonus et l'argent bonus des tours gratuits est soumis à la condition préalable que 35 fois le montant du bonus soit misé en premier, à l'exclusion des paris sur les jeux de table ;</p>
+                <p>- Le retrait des gains issus de tours gratuits ou d'autres bonus avant votre premier dépôt est soumis à la condition préalable que 150 fois le montant du bonus soit misé en premier, à l'exclusion des paris sur les jeux de table.</p>
+                <p>11.15. Les jeux de table, les jeux de poker vidéo et le Keno ne sont pas inclus dans le calcul de toute exigence de pari 35 fois ou 150 fois les tours gratuits et l'argent de bonus mentionnés dans la clause 11.14 ci-dessus. En d'autres termes, le pari ne doit pas concerné des jeux de table pour pouvoir respecter la condition d'acceptation du retrait du bonus.</p>
+                <p>11.16. Tous les bonus, incluant les bonus de bienvenue, les bonus d'anniversaire, les bonus spéciaux et tous les autres bonus, ont une validité de 7 jours à partir du moment de la réclamation. Si les mises ne sont pas complétées dans la période de 7 jours, le solde bonus sera supprimé du compte.<br><br>11.17. En demandant un retrait, vous renoncez à tout le solde du Bonus sur votre compte.</p>
+                <p>11.18 La Société se réserve le droit de modifier, d'annuler ou de compléter la structure du programme de bonus définie dans les présentes à tout moment.</p>
+                <p>11.19. La Société se réserve le droit de modifier, d'annuler, de récupérer ou de refuser toute promotion ou offre à tout client, en particulier, aux joueurs qui, à son avis, sont soupçonnés d'utiliser abusivement son Site Web.</p>
+                <p>11.20. Nous nous réservons le droit d'exiger de tout client, à notre discrétion, qu'il fournisse des preuves satisfaisantes de son identité avant de créditer tout bonus, pari gratuit ou offre sur son Compte.</p>
+                <p>11.21. Un dépôt minimum de 15&nbsp;€ est requis pour recevoir un dépôt bonus.</p>
+                <p>11.22. Les bonus de tours gratuits sont valables pendant un nombre limité de jours, comme spécifié au moment de la notification du bonus.</p>
+                <p>11.23. Le choix de jeu et les lignes de paiement des tours gratuits sont définis par nous.</p>
+                <p>11.24. Dès que vous effectuez votre premier dépôt et que votre compte a été vérifié, vous recevez 100 tours gratuits (10 par jour avec expiration au bout de 24 heures pendant les 10 premiers jours) pour l'une de nos machines à sous les plus populaires.&nbsp;Tous les gains que vous gagnez sont ajoutés à votre solde bonus. Tous les tours gratuits crédités sur le compte d'un joueur doivent être utilisés dans les 24 heures suivant la date d'octroi de l'offre. Les tours gratuits inutilisés sont supprimés du compte par la suite.</p>
+                <p>11.25. La promotion roue bonus est disponible pour les joueurs ayant un compte de niveau 1 ou plus.</p>
+                <p>11.26. La roue bonus peut être tournée une fois par semaine (du lundi au lundi) afin de gagner un bonus aléatoire sur votre prochain dépôt.</p>
+                <p>11.27. La possibilité de réclamer un bonus de dépôt issu du jeu de la roue bonus est disponible sur la page Mon compte pendant 10 jours. Si le bonus de dépôt gagné n'est pas réclamé, vous ne serez pas en mesure de faire tourner la roue bonus pendant cette période.</p>
+                <p>11.28. Les joueurs peuvent réclamer des bonus Cashback s'ils sont éligibles.</p>
+                <p>11.29. Les bonus Cashback qui peuvent être retirés peuvent être réclamés sur la page Mon compte. Ils sont affichés en tant que « Bonus disponible », si vous êtes éligible.</p>
+                <p>11.30. Vous avez accès au Cashback uniquement lorsque le montant total des jetons bonus reçus ne dépasse pas 20&nbsp;% de vos résultats en matière de paris (pertes moins gains).</p>
+                <p>11.31. Le montant du Cashback est déterminé en fonction de votre statut VIP.</p>
+                <p>11.32. Les montants maximaux du Cashback bonus pouvant être crédités sont les suivants&nbsp;:</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 25&nbsp;€ pour les comptes VIP de niveau Bronze, Chrome ou Silver.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 50&nbsp;€ pour les comptes VIP de niveau Gold ou Platinum.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 75&nbsp;€ pour les comptes VIP de niveau Diamond.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 100&nbsp;€ pour les comptes VIP de niveau Red Diamond.</p>
+                <p>11.33. Les demandes de retrait d'argent seront payées sur votre solde bonus et respecteront les restrictions de retrait de bonus décrites ailleurs dans les présentes Conditions.</p>
+                <p>11.34. Les remboursements ne peuvent pas être réclamés plus d'une fois par période de 24 heures.</p>
+                <p>11.35. Pas plus de 4 demandes de remboursement peuvent être traitées dans un mois civil.</p>
+                <p><strong>12. UTILISATION PERSONNELLE ET PROPRIÉTÉ INTELLECTUELLE</strong></p>
+                <p>12.1. «&nbsp;<strong> Droits de propriété intellectuelle de la société </strong>&nbsp;» désigne tous les services et produits sur le Site Web et le Site Web lui-même, y compris, entre autres, tous les jeux qui peuvent vous être fournis par nous ou téléchargés à partir de sources rendues accessibles par nous, pour une utilisation avec toute partie de nos services ou produits, y compris, entre autres, tous les logiciels, inventions, savoir-faire, marques, noms commerciaux, noms de domaine, images, graphiques, logos, conception, animations, photographies, vidéos, audio, musique, texte et autres contenus et tous les droits de propriété intellectuelle associés, qu'ils soient enregistrés ou non, dans le monde entier, y compris, entre autres, toute amélioration, tout changement et toute modification de ce qui précède.</p>
+                <p>12.2. Vous consentez à ce que tous les droits d'auteur et tous les droits de propriété et autres droits de propriété intellectuelle sur les DPI de la Société nous appartiennent ou appartiennent à nos concédants de licence et à ce que vous n'ayez aucun droit ou autre intérêt sur ces DPI de la Société, sauf dans les cas spécifiquement mentionnés dans les présentes Conditions.</p>
+                <p>12.3. Vous bénéficiez d'une licence personnelle, non cessible et non transférable pour utiliser les DPI de la Société uniquement à des fins de divertissement et d'utilisation de l'un de nos services et produits et à aucune autre fin que ce soit, et en particulier, pas à des fins d'audit, de révision ou d'utilisation commerciale ou organisée.</p>
+                <p>12.4. Vous ne pouvez pas concéder une sous-licence, céder ou transférer la licence qui vous est accordée, ou louer ou vous séparer de tout ou partie de cette licence ou des DPI de la Société incorporés dans cette licence.</p>
+                <p>12.5. Vous ne pouvez pas copier, transférer, reproduire, distribuer, exploiter ou faire tout autre usage des données sur le Site Web dans un autre but que celui de l'afficher sur votre écran d'ordinateur.</p>
+                <p>12.6. Vous ne pouvez pas intégrer le lien du Site Web sur un autre Site Web sans notre autorisation écrite.</p>
+                <p><strong>13. RESPONSABILITÉ</strong></p>
+                <p>13.1. Vous reconnaissez que nous n'approuvons pas et que nous ne sommes pas responsables du contenu ou des informations contenues dans la publicité, les liens, les supports marketing ou toute autre présence tierce sur le Site Web. En outre, nous ne sommes pas responsables et n'avons aucune responsabilité envers les sites web tiers ainsi que tout contenu de ces sites web, vers lesquels mènent les liens figurant sur le Site Web, et le fait de cliquer sur ces liens relève de votre seule responsabilité.</p>
+                <p>13.2. Vous acceptez de nous indemniser, nous, nos sociétés affiliées et nos actionnaires, employés, dirigeants et autres représentants respectifs, et de nous tenir à l'abri de toute demande, réclamation, dommage, coût ou dépense, notamment tous les frais juridiques, engagés à la suite ou en lien avec (i) votre utilisation du Site Web, y compris la violation par vous des présentes Conditions, des lois et règlements applicables ou des droits d'une autre personne ou entité&nbsp;; (ii) vos actes de négligence, omissions ou une mauvaise conduite délibérée.</p>
+                <p>13.3. Vous acceptez, convenez et reconnaissez que nous ne sommes pas responsables envers vous de toute perte résultant de l'utilisation, de l'abus ou de la mauvaise utilisation de votre Compte, ou de l'un de nos produits et services et de tous les sites web correspondants et/ou de tout problème technique, panne de système, retard, imperfections, interruptions, transmission de données manipulée ou incorrecte, perte ou corruption de données ou de lignes de communication (ainsi que toute défaillance ayant une incidence sur la possibilité d'utiliser la voie de retour de la télévision interactive), attaques par déni de service distribué, virus ou tout autre événement technologique défavorable découlant de votre accès ou utilisation du Site Web ou de nos produits et services&nbsp;;</p>
+                <p>13.4. Vous reconnaissez que nous déclinons toute responsabilité concernant votre obligation légale de rendre compte et de verser des redevances aux autorités fiscales concernant votre utilisation ou votre accès à l'un de nos services ou produits, y compris vos gains, et cela reste votre seule responsabilité. La Société ne divulguera pas les détails de vos gains, sauf si la loi l'exige. Si vous résidez dans une juridiction où vos gains sont imposables, vous devez, sous votre propre responsabilité, conserver la trace de ces gains et les signaler aux autorités compétentes.</p>
+                <p>13.5. Vous convenez que vous ne disposez d'aucun recours ni d'aucun autre droit de revendication vis-à-vis des propriétaires et du ou des développeurs de logiciels du Site Web ou de tout service ou produit accessible par le biais du Site Web pour tout sujet, cause ou élément lié à votre participation à nos services ou produits.</p>
+                <p>13.6. Vous reconnaissez et acceptez que votre compte n'est pas un compte bancaire et qu'il n'est donc pas assuré, garanti, parrainé ou autrement protégé par un système de dépôt ou d'assurance bancaire ou par tout autre système d'assurance similaire de toute autre juridiction, notamment la juridiction dont vous dépendez. En outre, le Compte ne porte aucun intérêt sur les fonds qui y sont détenus.</p>
+                <p>13.7. Le Site Web et tous les services, produits et logiciels qu'il contient (le «&nbsp;<strong> Logiciel </strong>&nbsp;»), sont fournis «&nbsp;tels quels&nbsp;» sans aucune promesse, garantie, condition, engagement ou déclaration, expresse ou implicite, statutaire ou autre. Nous et notre (nos) fournisseur(s) de logiciels, ainsi que toutes nos sociétés affiliées et parties liées, excluons par la présente toutes les conditions et garanties implicites (y compris toute garantie de qualité marchande, de qualité satisfaisante et d'adéquation à un usage particulier) et ne garantissons pas que le logiciel répondra à vos exigences, que le logiciel ne violera pas les droits de propriété intellectuelle d'un tiers, que le fonctionnement du logiciel sera exempt d'erreurs ou ininterrompu, que tout défaut du logiciel sera corrigé, ou que le logiciel est exempt de virus et/ou exempt de tout autre logiciel malveillant.</p>
+                <p><strong>14. COMPTES INACTIFS</strong></p>
+                <p>14.1. Si vous n'avez effectué aucune transaction à l'aide de votre compte pendant une période continue de 180 jours, votre compte sera considéré comme inactif et sera clôturé. Une fois le compte clôturé, le solde de ce dernier sera perdu.</p>
+                <p>14.2. Si vous souhaitez rouvrir votre compte après sa fermeture, vous devrez nous contacter.</p>
+                <p><strong>15. LIMITATION DE RESPONSABILITÉ</strong></p>
+                <p>15.1. EN AUCUN CAS, NOUS OU NOTRE FOURNISSEUR DE LOGICIELS, OU NOS SOCIÉTÉS AFFILIÉES ET PARTIES LIÉES, NE SERONS RESPONSABLES ENVERS VOUS DE TOUT DOMMAGE OU PERTE DIRECT, CONSÉCUTIF, INDIRECT, ACCESSOIRE OU SPÉCIAL DE QUELQUE NATURE QUE CE SOIT, NOTAMMENT LA PERTE D'ACTIVITÉ, DE BÉNÉFICES, DE REVENUS, DE CONTRATS OU D'ÉPARGNE PRÉVUE, OU DE PERTE OU DE DOMMAGE DÉCOULANT DE LA PERTE, DU DOMMAGE OU DE LA CORRUPTION DE TOUTES DONNÉES, QUE NOUS SOYONS OU NON INFORMÉS À L'AVANCE DE LA POSSIBILITÉ D'UNE TELLE PERTE OU D'UN TEL DOMMAGE.</p>
+                <p>En vertu des présentes Conditions et sans déroger à ce qui précède, notre responsabilité envers vous ne doit pas dépasser&nbsp;: (i) dans le cas de toute responsabilité liée à une transaction spécifique, le montant de la mise ; ou (ii) dans le cas de toute autre question, un total de cinq cents euros (500&nbsp;€ ).</p>
+                <p><strong>16. DIVERS</strong></p>
+                <p>16.1. Si vous ne comprenez pas une partie des présentes Conditions, veuillez contacter notre équipe d'assistance à la clientèle.</p>
+                <p>16.2. Les présentes Conditions constituent l'intégralité de l'accord entre vous et nous et aucune autre condition ne s'applique. Les présentes Conditions régissent et remplacent tout autre accord, promesse ou déclaration qui vous est faite, que ce soit par écrit ou non, et qui, dans la mesure où ils ne sont pas conformes aux présentes conditions, n'ont aucune valeur.</p>
+                <p>16.3. Nous ne saurions être tenus responsables de toute violation du présent accord par nous dans la mesure où elle est causée directement ou indirectement par des circonstances indépendantes de notre volonté et qui nous empêche de nous acquitter de nos obligations envers vous.</p>
+                <p>16.4. Les présentes Conditions sont formulées en langue anglaise. Si, à un moment quelconque, elles sont présentées aux clients dans une autre langue et qu'il existe un conflit ou une incohérence entre le texte en anglais et toute autre version dans une autre langue, la version anglaise prévaudra.</p>
+                <p>16.5. Rien de ce qui est écrit ou dit par un employé, agent ou autre représentant de la Société ne saurait constituer une dérogation aux présentes Conditions ou une affirmation légitime concernant la nature ou la qualité de quelque aspect que ce soit des produits ou services que nous proposons.</p>
+                <p>16.6. Les employés de la Société, ses titulaires de licence, distributeurs, grossistes, affiliés et filiales ne sont pas autorisés à participer à l'un de nos services ou produits à des fins autres que les tests, la vérification, etc.</p>
+                <p>16.7. Vous reconnaissez que vous participez à l'un de nos services ou produits à titre personnel et non professionnel, et que vous y participez uniquement à des fins de divertissement.</p>
+                <p>16.8. Vous êtes conscient(e) de la possibilité de perdre de l'argent en utilisant l'un de nos services ou produits et assumez l'entière responsabilité de toute perte éventuelle.</p>
+                <p>16.9. Les institutions financières, les fournisseurs de cartes, les banques et les autres tiers chargés du traitement des paiements peuvent facturer des frais pour le traitement des paiements («&nbsp;Frais de traitement des paiements par des tiers&nbsp;»). Le Joueur est tenu de payer tous ces frais de traitement des paiements par des tiers</p>
+                <p><strong>17. RESTRICTION POUR LES JEUX NETENT<br></strong></p>
+                <p>17.1. Restriction absolue&nbsp;: NetEnt ne permettra pas à NetEnt Casino Games d'être fourni à une entité qui opère dans l'une des juridictions ci-dessous (que NetEnt Casino Games soit fourni ou non par l'entité dans cette juridiction) sans les licences appropriées.&nbsp; Belgique, Bulgarie, Colombie, Croatie, Danemark, Espagne, Estonie, États-Unis d'Amérique, France, Italie, Lettonie, Lituanie, Mexique, Portugal, République tchèque, Roumanie, Royaume-Uni, Suède, Suisse. &nbsp;</p>
+                <p>17.2. Territoires inscrits sur la liste noire&nbsp;: Tous les jeux de casino NetEnt ne peuvent pas être offerts dans les territoires suivants&nbsp;:&nbsp; Afghanistan, Albanie, Algérie, Angola, Australie, Bahamas, Botswana, Belgique, Bulgarie, Colombie, Croatie, République tchèque, Danemark, Estonie, Équateur, Éthiopie, France, Ghana, Guyana, Hong Kong, Italie, Iran, Irak, Israël, Koweït, Lettonie, Lituanie, Mexique, Namibie, Nicaragua, Corée du Nord, Ouganda, Pakistan, Panama, Philippines, Portugal, Roumanie, Singapour, Suède, Suisse, Soudan, Syrie, Taïwan, Trinité-et-Tobago, Tunisie, Royaume-Uni, Yémen, Zimbabwe.</p>
+                <p>17.3. Territoires sur liste noire&nbsp;: Les jeux de la marque NetEnt suivants subissent d'autres restrictions en plus des territoires sur liste noire indiqués ci-dessus&nbsp;:<br><br>i. En plus des juridictions énoncées au paragraphe 2, Planet of the Apes Video Slot ne doit pas être proposé dans les territoires suivants&nbsp;:&nbsp;&lt;Azerbaïdjan, Chine, Inde, Malaisie, Qatar, Russie, Thaïlande, Turquie, Ukraine.&nbsp;<br><br>ii. Outre les juridictions énoncées au paragraphe 2, Vikings Video Slot ne doit pas être proposé dans les juridictions suivantes&nbsp;: Azerbaïdjan, Cambodge, Canada, Chine, États-Unis d'Amérique, France, Inde, Indonésie, Laos, Malaisie, Myanmar, Papouasie-Nouvelle-Guinée, Qatar, Russie, Corée du Sud, Thaïlande, Turquie, Ukraine.&nbsp;<br><br>iii. En plus des juridictions énoncées au paragraphe 2, Narcos Video Slot ne doit pas être proposé dans les territoires suivants&nbsp;: Indonésie, Corée du Sud. <br><br>iv.&nbsp;Outre les juridictions énoncées au paragraphe 2, Street Fighter Video Slot ne doit pas être proposé dans les territoires suivants&nbsp;: Anguilla, Antigua-et-Barbuda, Argentine, Aruba, Barbade, Bahamas, Belize, Bermudes, Bolivie, Bonaire, Brésil, Îles Vierges britanniques, Canada, Îles Caïmanes, Chine, Chili, Îles Clipperton, Colombie, Costa Rica, Cuba, Curaçao, Dominique, République dominicaine, El Salvador, Groenland, Grenade, Guadeloupe, Guatemala, Guyana, Haïti, Honduras, Jamaïque, Japon, Martinique, Mexique, Montserrat, Îles Navassa, Paraguay, Pérou, Porto Rico, Saba, Saint-Barthélemy, Saint-Eustache, Saint-Kitts-et-Nevis, Sainte-Lucie, Saint-Martin, Saint-Pierre-et-Miquelon, Saint-Vincent-et-les Grenadines, Corée du Sud, Suriname, Îles Turques et Caïques, États-Unis d'Amérique, Uruguay, Îles Vierges américaines, Venezuela.&nbsp;<br><br>v. En plus des juridictions énoncées au paragraphe 2, Fashion TV Video Slot ne doit pas être proposé dans les territoires suivants&nbsp;: Cuba, Jordanie, Turquie, Arabie saoudite.</p>
+                <p>17.4. Les monstres universels (Dracula, Créature du lagon noir, Malédiction des fantômes et L'homme invisible) sont uniquement accessibles dans les territoires suivants&nbsp;:&nbsp;Andorre, Autriche, Arménie, Azerbaïdjan, Bélarus, Bosnie-Herzégovine, Chypre, Finlande, Géorgie, Allemagne, Grèce, Hongrie, Irlande, Islande, Liechtenstein, Luxembourg, Malte, Moldavie, Monaco, Monténégro, Pays-Bas, Macédoine du Nord, Norvège, Pologne, Russie, Saint-Marin, Serbie, Slovaquie, Slovénie, Turquie et Ukraine.</p>
+            </div>
+            <div class="modal__content-bottom">
+                <div class="modal__content-btn">
+                    Retour au site
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const supportedLangs = ['en', 'it', 'fr', 'de', 'es'];
+            var userLang = navigator.language.split('-')[0];
+            let lang = supportedLangs.includes(userLang) ? userLang : 'en';
+
+        fetch(`locales/${lang}.json`)
+            .then(response => response.json())
+            .then(translations => {
+                document.documentElement.lang = lang;
+                document.querySelector('.btn__rect-text').textContent = translations.MAIN_BUTTON;
+
+                document.querySelector('.form .card__title span').textContent = translations.TITLE_CARD;
+                document.querySelector('.form .win').textContent = translations.BONUS_CARD;
+                document.querySelector('.footer .card__title span').textContent = translations.TITLE_CARD;
+                document.querySelector('.footer .win').textContent = translations.BONUS_CARD;
+
+                document.getElementById('first_name').placeholder = translations.FIRST_NAME;
+                document.getElementById('last_name').placeholder = translations.LAST_NAME;
+                document.getElementById('password').placeholder = translations.PASSWORD;
+                document.getElementById('phone').placeholder = translations.PHONE;
+                document.getElementById('email').placeholder = translations.EMAIL;
+                document.querySelector('.checkbox label p').textContent = translations.CHECK_TERMS;
+                document.querySelector('.terms-btn').textContent = translations.TERMS_BTN;
+                document.getElementById('btn-submit').textContent = translations.MAIN_BUTTON;
+
+                document.querySelector('.bonus h2 .first').textContent = translations.TITLE_STEPS;
+                document.querySelector('.bonus h2 .second').textContent = translations.STEPS;
+                document.querySelectorAll('.steps__item span')[0].textContent = translations.STEP_ONE;
+                document.querySelectorAll('.steps__item span')[1].textContent = translations.STEP_TWO;
+                document.querySelectorAll('.steps__item span')[2].textContent = translations.STEP_THREE;
+
+                document.querySelector('.slider h2 .first').textContent = translations.TITLE_JACKPOT;
+                document.querySelector('.slider h2 .second').textContent = translations.SUBTITLE_JACKPOT;
+                document.querySelectorAll('.gallery__content-title')[0].textContent = translations.JACKPOT_TITLE_ONE;
+                document.querySelectorAll('.gallery__content-title')[1].textContent = translations.JACKPOT_TITLE_TWO;
+                document.querySelectorAll('.gallery__content-title')[2].textContent = translations.JACKPOT_TITLE_THREE;
+                document.querySelectorAll('.gallery__content-win')[0].textContent = translations.JACKPOT_WIN_ONE;
+                document.querySelectorAll('.gallery__content-win')[1].textContent = translations.JACKPOT_WIN_TWO;
+                document.querySelectorAll('.gallery__content-win')[2].textContent = translations.JACKPOT_WIN_THREE;
+                document.querySelectorAll('.gallery__content-text')[0].textContent = translations.JACKPOT_TEXT_ONE;
+                document.querySelectorAll('.gallery__content-text')[1].textContent = translations.JACKPOT_TEXT_TWO;
+                document.querySelectorAll('.gallery__content-text')[2].textContent = translations.JACKPOT_TEXT_THREE;
+
+
+                document.querySelector('.modal__content-top span').textContent = translations.TERMS_BTN;
+                document.querySelector('.popup').innerHTML = translations.POPUP_CONTENT;
+                document.querySelector('.modal__content-btn').textContent = translations.BACK_TO_SITE;
+
+            })
+            .catch(error => console.error('Error loading the translation file:', error));
+    });
+    </script>
+</body>
+</html>
