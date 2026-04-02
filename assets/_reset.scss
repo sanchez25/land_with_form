@@ -1,0 +1,79 @@
+:root {
+    --background: #00002B;
+    --border: #FFC839;
+    --color-btn: #BC6A06;
+    --form: linear-gradient(180deg, #060D49 0%, #172879 50%, #070F4D 100%);
+    --card-title: linear-gradient(90deg, #3969FF 0%, #005DFF 100%);
+    --card-shadow: 0px 4px 4px 0px #FFFFFF40 inset, 0px 0px 50px 0px #1C45FA80;
+    --radius: 6px;
+    --radius-input: 4px;
+    --radius-card: 8px;
+    --color-text: #F4F4F4;
+    --color-form: #fff;
+    --color-placeholder: rgba(255, 255, 255, 0.5);
+    --color-title: linear-gradient(90deg, #FFC839 0%, #FF9900 100%);
+    --text-shadow: 0px 4px 4px 0 rgba(255, 255, 255, 0.25);
+    --title-shadow: 0px 0px 30px 0px rgba(250, 201, 28, 0.3), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+    --input-back: #121A59;
+    --border-input: rgba(255, 255, 255, 0.1);
+    --error: #F40000;
+    --card: linear-gradient(90deg, #060D49 0%, #172879 50%, #070F4D 100%);
+    --shadow-img: drop-shadow(0px 0px 50px rgba(255, 200, 57, 0.75));
+    --slider-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 0px 20px 0px rgba(250, 201, 28, 0.5);
+    --overlay: rgba(0, 0, 43, 0.85); 
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer, header, nav, section, main{
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+button {
+    cursor: pointer;
+}
